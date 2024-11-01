@@ -4,7 +4,6 @@ import jakarta.persistence.Column;
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
-import org.apache.catalina.User;
 
 import java.io.Serial;
 import java.io.Serializable;
@@ -18,9 +17,9 @@ public class Enrollment implements Serializable {
 
     @EmbeddedId
     private EnrollmentPk id = new EnrollmentPk();
-    @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
+    @Column(columnDefinition = "TIMESTAMP WITHOUT ")
     private Instant enrollMoment;
-    @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
+    @Column(columnDefinition = "TIMESTAMP WITHOUT ")
     private Instant refundMoment;
     private boolean available;
     private boolean onlyUpdate;
