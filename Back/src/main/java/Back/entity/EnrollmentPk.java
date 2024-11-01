@@ -3,7 +3,6 @@ package Back.entity;
 import jakarta.persistence.Embeddable;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
-import org.apache.catalina.User;
 
 import java.io.Serial;
 import java.io.Serializable;
