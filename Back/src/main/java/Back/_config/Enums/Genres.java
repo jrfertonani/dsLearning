@@ -33,4 +33,11 @@ public enum Genres {
         throw new IllegalArgumentException(" Invalid gender: " + cod);
     }
 
+    public Integer getCodigo() {
+        return codigo;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
 }
